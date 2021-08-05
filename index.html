@@ -55,7 +55,7 @@
             <h1 class="hero-title">
                 <span>Эффективные решения для вашего бизнеса</span>
             </h1>
-            <button type="button" class="primary-button">Заказать услугу</button>
+            <button type="button" class="primary-button" data-modal-open>Заказать услугу</button>
         </section>
         <!--Особенности-->
         <section class="section">
@@ -108,9 +108,30 @@
             <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="work-list">
-                <li class="item"><img src="./images/code.jpg" alt="Человек пишет код" width="370"></li>
-                <li class="item"><img src="./images/phone.jpg" alt="Человек смотрит на телефон" width="370"></li>
-                <li class="item"><img src="./images/the_tablet.jpg" alt="Человек выбирает цвет на планшете" width="370"></li>
+                <li class="item">
+                    <div class="work-thumb">
+                    <img src="./images/code.jpg" alt="Человек пишет код" width="370">
+                    <div class="work-overlay">
+                        <p>ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                    </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="work-thumb">
+                    <img src="./images/phone.jpg" alt="Человек смотрит на телефон" width="370">
+                    <div class="work-overlay">
+                        <p>МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                    </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="work-thumb">
+                    <img src="./images/the_tablet.jpg" alt="Человек выбирает цвет на планшете" width="370">
+                    <div class="work-overlay">
+                        <p>ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                    </div>
+                    </div>
+                </li>
             </ul>
             </div>
         </section>
@@ -321,6 +342,9 @@
         </section>
 
     </main>
+
+    
+
     <!--Футер-->
     <footer class="footer-background">
         <div class="container">
@@ -369,6 +393,17 @@
         </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="icon-box" data-modal-close>
+                <svg class="icon-close">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
