@@ -669,12 +669,14 @@ ul {
   transition: opacity var(--main-transition) 250ms;
 }
 
-.portfolio-actions:hover {
+.portfolio-item .link:hover {
+  overflow: visible;
   opacity: 1;
 }
 
 .portfolio-overlay:hover {
   opacity: 1;
+  transform: opacity var(--main-transition) 250ms;
 }
 
 /* Card */
