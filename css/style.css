@@ -43,6 +43,9 @@ ul {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
 /* Container */
 .container {
   margin-left: auto;
@@ -635,6 +638,10 @@ ul {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio-link {
+  display: block;
+}
+
 .portfolio-thumb {
   position: relative;
   overflow: hidden;
@@ -669,14 +676,14 @@ ul {
   transition: opacity var(--main-transition) 250ms;
 }
 
-.portfolio-item .link:hover {
-  overflow: visible;
-  opacity: 1;
+.portfolio-link:hover .portfolio-overlay,
+.portfolio-link:focus .portfolio-overlay {
+  transform: translateY(0);
 }
 
-.portfolio-overlay:hover {
+.portfolio-link:hover .portfolio-actions,
+.portfolio-link:focus .portfolio-actions {
   opacity: 1;
-  transform: opacity var(--main-transition) 250ms;
 }
 
 /* Card */
