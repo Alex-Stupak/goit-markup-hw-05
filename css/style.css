@@ -314,6 +314,7 @@ a {
 
 .work-thumb {
   position: relative;
+  display: block;
 }
 
 .work-overlay {
@@ -365,7 +366,7 @@ a {
     fill var(--main-transition);
 }
 
-.social-item:hover .social-link {
+.social-link:hover {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -397,7 +398,7 @@ a {
   transition: fill var(--main-transition);
 }
 
-.client-item:hover .link-client {
+.link-client:hover {
   fill: var(--accent-color);
   border: solid 1px var(--accent-color);
 }
@@ -442,6 +443,7 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-text-contacts);
+  transition: color var(--main-transition);
 }
 
 .footer-list .footer-contacts:hover,
@@ -470,13 +472,6 @@ a {
 
 .social-item-footer {
   display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-list .social-item-footer + .social-item-footer {
@@ -486,9 +481,16 @@ a {
 .social-link-footer {
   display: inline-flex;
   fill: var(--primary-white-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-item-footer:hover {
+.social-link-footer:hover {
   background-color: var(--accent-color);
   transition: background-color var(--main-transition),
     border-radius var(--main-transition);
